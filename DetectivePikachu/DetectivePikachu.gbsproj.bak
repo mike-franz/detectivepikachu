@@ -2,18 +2,18 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
+        "worldScrollX": 1124,
         "worldScrollY": 0,
-        "zoom": 100,
+        "zoom": 308.33331298828125,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
         "customColorsBlack": "202850",
-        "startX": 9,
-        "startY": 9,
+        "startX": 10,
+        "startY": 11,
         "startDirection": "down",
-        "startSceneId": "",
-        "playerSpriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd"
+        "startSceneId": "5b2c06fa-d0f7-4a61-af47-0940b0397387",
+        "playerSpriteSheetId": "edd371ed-bfaa-40a7-9d15-14a2aefbea36"
     },
     "scenes": [
         {
