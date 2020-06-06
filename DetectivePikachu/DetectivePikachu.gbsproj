@@ -1,0 +1,229 @@
+{
+    "settings": {
+        "showCollisions": true,
+        "showConnections": true,
+        "worldScrollX": 1124,
+        "worldScrollY": 0,
+        "zoom": 308.33331298828125,
+        "customColorsWhite": "E8F8E0",
+        "customColorsLight": "B0F088",
+        "customColorsDark": "509878",
+        "customColorsBlack": "202850",
+        "startX": 10,
+        "startY": 11,
+        "startDirection": "down",
+        "startSceneId": "5b2c06fa-d0f7-4a61-af47-0940b0397387",
+        "playerSpriteSheetId": "edd371ed-bfaa-40a7-9d15-14a2aefbea36"
+    },
+    "scenes": [
+        {
+            "name": "Pokecenter",
+            "backgroundId": "59422921-9aef-45c6-b0bd-2058f4223c64",
+            "width": 20,
+            "height": 18,
+            "collisions": [],
+            "id": "5b2c06fa-d0f7-4a61-af47-0940b0397387",
+            "x": 428,
+            "y": 31,
+            "actors": [],
+            "triggers": []
+        }
+    ],
+    "_version": "1.2.0",
+    "author": "Chewbaggins",
+    "name": "DetectivePikachu",
+    "variables": [],
+    "backgrounds": [
+        {
+            "id": "59422921-9aef-45c6-b0bd-2058f4223c64",
+            "name": "Pokecenter",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Pokecenter.png",
+            "_v": 1591478588949
+        },
+        {
+            "id": "33a7b13f-e1d2-4cd4-9e52-be98f72d88e2",
+            "name": "interior-1",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "interior-1.png",
+            "_v": 1591478588898
+        },
+        {
+            "id": "85fccedc-cf07-4bf0-8c81-ef209a9d6aa3",
+            "name": "interior-downstairs1",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "interior-downstairs1.png",
+            "_v": 1591478588902
+        },
+        {
+            "id": "95b2f4a3-3bfb-4078-8eeb-de539d11bd76",
+            "name": "interior-statue",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "interior-statue.png",
+            "_v": 1591478588944
+        },
+        {
+            "id": "ddb5540e-5fe4-4223-b53d-c6d344112158",
+            "name": "interior-upstairs1",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "interior-upstairs1.png",
+            "_v": 1591478588948
+        },
+        {
+            "id": "9e21e972-1b49-4df8-a9c4-ff53ed495628",
+            "name": "pokemart",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "pokemart.png",
+            "_v": 1591478588800
+        }
+    ],
+    "spriteSheets": [
+        {
+            "id": "edd371ed-bfaa-40a7-9d15-14a2aefbea36",
+            "name": "Ash",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Ash.png",
+            "_v": 1591478639975
+        },
+        {
+            "id": "c1355dc8-0300-4673-9303-be9ee53ba7ce",
+            "name": "book",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "book.png",
+            "_v": 1591478639983
+        },
+        {
+            "id": "22001ee6-0c4b-4e95-ae07-64c01aa50ec8",
+            "name": "chef",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "chef.png",
+            "_v": 1591478639986
+        },
+        {
+            "id": "519a4631-98da-4f8a-8b8b-61efd8c8ce85",
+            "name": "clipboard",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "clipboard.png",
+            "_v": 1591478640016
+        },
+        {
+            "id": "03f0163b-30d3-4a36-a9be-59b5299c2ab2",
+            "name": "nurse-joy",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "nurse-joy.png",
+            "_v": 1591478640021
+        },
+        {
+            "id": "8ab4a079-0042-4744-a10d-8eb3e1268c47",
+            "name": "officer",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "officer.png",
+            "_v": 1591478640026
+        },
+        {
+            "id": "5488e507-ae5a-40f0-b1ab-3eadd2d4d90d",
+            "name": "paper",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "paper.png",
+            "_v": 1591478640027
+        },
+        {
+            "id": "10043cdc-bb55-418c-94e4-2fe8d8153b62",
+            "name": "pidgey",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "pidgey.png",
+            "_v": 1591478640037
+        },
+        {
+            "id": "41be31ae-f293-4bb8-8944-451c3fb6b2df",
+            "name": "pikachu",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "pikachu.png",
+            "_v": 1591478640035
+        },
+        {
+            "id": "2284bf97-b0c5-412d-8ae8-947ffd0b8410",
+            "name": "pokeball",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "pokeball.png",
+            "_v": 1591478640043
+        },
+        {
+            "id": "84910a8b-9455-4d1c-8609-77b15606c81a",
+            "name": "professor",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "professor.png",
+            "_v": 1591478640040
+        },
+        {
+            "id": "4bfcddf0-8eaa-4ceb-ab95-f4db47aeb740",
+            "name": "scientist",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "scientist.png",
+            "_v": 1591478640045
+        },
+        {
+            "id": "f65a49ab-4abc-4ea7-9ee7-f6953ac2f1bc",
+            "name": "sunglass-man",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "sunglass-man.png",
+            "_v": 1591478640046
+        },
+        {
+            "id": "a54807b0-c0c9-453d-9350-abf2e00bdfb3",
+            "name": "thug",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "thug.png",
+            "_v": 1591478640047
+        },
+        {
+            "id": "3c7586f2-692c-46d3-9a49-fc7b5c7ab93d",
+            "name": "tophat-man",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "tophat-man.png",
+            "_v": 1591478639974
+        }
+    ],
+    "music": [
+        {
+            "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
+            "name": "template",
+            "filename": "template.mod",
+            "_v": 1591478545866
+        }
+    ],
+    "customEvents": []
+}
