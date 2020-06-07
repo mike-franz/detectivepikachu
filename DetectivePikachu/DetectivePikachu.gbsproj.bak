@@ -2,9 +2,15 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
+<<<<<<< Updated upstream
         "worldScrollX": 1894.4000244140625,
         "worldScrollY": 856.7999877929688,
         "zoom": 516.6666259765625,
+=======
+        "worldScrollX": 0,
+        "worldScrollY": 0,
+        "zoom": 100,
+>>>>>>> Stashed changes
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -821,6 +827,7 @@
             "id": "cfb1bd93-f8de-446e-b115-18ecbb4d3d28",
             "x": 372.5,
             "y": 136.5,
+<<<<<<< Updated upstream
             "actors": [
                 {
                     "spriteSheetId": "84910a8b-9455-4d1c-8609-77b15606c81a",
@@ -930,6 +937,10 @@
                     "command": "EVENT_END"
                 }
             ]
+=======
+            "actors": [],
+            "triggers": []
+>>>>>>> Stashed changes
         },
         {
             "name": "Scene 5",
@@ -1070,6 +1081,7 @@
             "x": 213.5,
             "y": 320.5,
             "actors": [],
+<<<<<<< Updated upstream
             "triggers": [
                 {
                     "trigger": "walk",
@@ -1097,6 +1109,9 @@
                     ]
                 }
             ]
+=======
+            "triggers": []
+>>>>>>> Stashed changes
         }
     ],
     "_version": "1.2.0",
@@ -1133,7 +1148,11 @@
             "imageWidth": 128,
             "imageHeight": 128,
             "filename": "House.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970874
+>>>>>>> Stashed changes
         },
         {
             "id": "966b6b4d-595a-416c-a89b-aaf9be174f3a",
@@ -1143,7 +1162,11 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "inside.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970875
+>>>>>>> Stashed changes
         },
         {
             "id": "33a7b13f-e1d2-4cd4-9e52-be98f72d88e2",
@@ -1153,7 +1176,11 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "interior-1.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970875
+>>>>>>> Stashed changes
         },
         {
             "id": "85fccedc-cf07-4bf0-8c81-ef209a9d6aa3",
@@ -1163,7 +1190,11 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "interior-downstairs1.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970875
+>>>>>>> Stashed changes
         },
         {
             "id": "95b2f4a3-3bfb-4078-8eeb-de539d11bd76",
@@ -1173,7 +1204,11 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "interior-statue.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970875
+>>>>>>> Stashed changes
         },
         {
             "id": "ddb5540e-5fe4-4223-b53d-c6d344112158",
@@ -1183,7 +1218,11 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "interior-upstairs1.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970875
+>>>>>>> Stashed changes
         },
         {
             "id": "16d2ed6c-3d4e-4388-b29e-51efd1623e9a",
@@ -1193,7 +1232,11 @@
             "imageWidth": 128,
             "imageHeight": 128,
             "filename": "Lab.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970875
+>>>>>>> Stashed changes
         },
         {
             "id": "d8dee587-2aa5-42bc-a4e2-3ca13c442c47",
@@ -1203,7 +1246,11 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "labtown.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970875
+>>>>>>> Stashed changes
         },
         {
             "id": "2d24b5ed-aa94-46a0-8152-8fd3cafe9ba7",
@@ -1213,7 +1260,11 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "playerstart.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970875
+>>>>>>> Stashed changes
         },
         {
             "id": "59422921-9aef-45c6-b0bd-2058f4223c64",
@@ -1223,7 +1274,11 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Pokecenter.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970875
+>>>>>>> Stashed changes
         },
         {
             "id": "9e21e972-1b49-4df8-a9c4-ff53ed495628",
@@ -1233,7 +1288,11 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "pokemart.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970875
+>>>>>>> Stashed changes
         },
         {
             "id": "0f08cddf-0bd5-4dd5-bc58-9ea8ba1c7dc6",
@@ -1243,7 +1302,11 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "town1.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970875
+>>>>>>> Stashed changes
         },
         {
             "id": "7b07fef0-adc6-41f0-97e0-129e0f8482c4",
@@ -1253,7 +1316,11 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "town2.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970876
+>>>>>>> Stashed changes
         }
     ],
     "spriteSheets": [
@@ -1263,7 +1330,11 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Ash.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970875
+>>>>>>> Stashed changes
         },
         {
             "id": "c1355dc8-0300-4673-9303-be9ee53ba7ce",
@@ -1271,7 +1342,11 @@
             "numFrames": 1,
             "type": "static",
             "filename": "book.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970876
+>>>>>>> Stashed changes
         },
         {
             "id": "22001ee6-0c4b-4e95-ae07-64c01aa50ec8",
@@ -1279,7 +1354,11 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "chef.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970876
+>>>>>>> Stashed changes
         },
         {
             "id": "519a4631-98da-4f8a-8b8b-61efd8c8ce85",
@@ -1287,7 +1366,11 @@
             "numFrames": 1,
             "type": "static",
             "filename": "clipboard.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970876
+>>>>>>> Stashed changes
         },
         {
             "id": "03f0163b-30d3-4a36-a9be-59b5299c2ab2",
@@ -1295,7 +1378,11 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "nurse-joy.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970876
+>>>>>>> Stashed changes
         },
         {
             "id": "8ab4a079-0042-4744-a10d-8eb3e1268c47",
@@ -1303,7 +1390,11 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "officer.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970876
+>>>>>>> Stashed changes
         },
         {
             "id": "5488e507-ae5a-40f0-b1ab-3eadd2d4d90d",
@@ -1311,7 +1402,11 @@
             "numFrames": 1,
             "type": "static",
             "filename": "paper.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970876
+>>>>>>> Stashed changes
         },
         {
             "id": "10043cdc-bb55-418c-94e4-2fe8d8153b62",
@@ -1319,7 +1414,11 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "pidgey.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970876
+>>>>>>> Stashed changes
         },
         {
             "id": "41be31ae-f293-4bb8-8944-451c3fb6b2df",
@@ -1327,7 +1426,11 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "pikachu.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970876
+>>>>>>> Stashed changes
         },
         {
             "id": "2284bf97-b0c5-412d-8ae8-947ffd0b8410",
@@ -1335,7 +1438,11 @@
             "numFrames": 1,
             "type": "static",
             "filename": "pokeball.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970876
+>>>>>>> Stashed changes
         },
         {
             "id": "84910a8b-9455-4d1c-8609-77b15606c81a",
@@ -1343,7 +1450,11 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "professor.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970876
+>>>>>>> Stashed changes
         },
         {
             "id": "4bfcddf0-8eaa-4ceb-ab95-f4db47aeb740",
@@ -1351,7 +1462,11 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "scientist.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970876
+>>>>>>> Stashed changes
         },
         {
             "id": "f65a49ab-4abc-4ea7-9ee7-f6953ac2f1bc",
@@ -1359,7 +1474,11 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "sunglass-man.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970876
+>>>>>>> Stashed changes
         },
         {
             "id": "a54807b0-c0c9-453d-9350-abf2e00bdfb3",
@@ -1367,7 +1486,11 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "thug.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970876
+>>>>>>> Stashed changes
         },
         {
             "id": "3c7586f2-692c-46d3-9a49-fc7b5c7ab93d",
@@ -1375,7 +1498,11 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "tophat-man.png",
+<<<<<<< Updated upstream
             "_v": 1591491188627
+=======
+            "_v": 1591490970876
+>>>>>>> Stashed changes
         }
     ],
     "music": [
@@ -1383,7 +1510,11 @@
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
+<<<<<<< Updated upstream
             "_v": 1591491188624
+=======
+            "_v": 1591490970867
+>>>>>>> Stashed changes
         }
     ],
     "customEvents": []
