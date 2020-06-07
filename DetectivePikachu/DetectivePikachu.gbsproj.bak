@@ -18,10 +18,43 @@
     "scenes": [
         {
             "name": "Pokecenter",
-            "backgroundId": "59422921-9aef-45c6-b0bd-2058f4223c64",
-            "width": 20,
-            "height": 18,
-            "collisions": [],
+            "backgroundId": "16d2ed6c-3d4e-4388-b29e-51efd1623e9a",
+            "width": 16,
+            "height": 16,
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
             "id": "5b2c06fa-d0f7-4a61-af47-0940b0397387",
             "x": 428,
             "y": 31,
@@ -769,7 +802,7 @@
         }
     ],
     "_version": "1.2.0",
-    "author": "Chewbaggins",
+    "author": "Chewbaggings ",
     "name": "DetectivePikachu",
     "variables": [
         {
@@ -809,6 +842,16 @@
             "imageHeight": 144,
             "filename": "inside.png",
             "_v": 1591480151396
+        },
+        {
+            "id": "966b6b4d-595a-416c-a89b-aaf9be174f3a",
+            "name": "inside",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "inside.png",
+            "_v": 1591484312765
         },
         {
             "id": "33a7b13f-e1d2-4cd4-9e52-be98f72d88e2",
