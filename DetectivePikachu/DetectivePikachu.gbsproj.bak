@@ -2,17 +2,17 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1124,
-        "worldScrollY": 0,
-        "zoom": 308.33331298828125,
+        "worldScrollX": 957.5999755859375,
+        "worldScrollY": 964.7999877929688,
+        "zoom": 233.33331298828125,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
         "customColorsBlack": "202850",
-        "startX": 10,
-        "startY": 11,
-        "startDirection": "down",
-        "startSceneId": "5b2c06fa-d0f7-4a61-af47-0940b0397387",
+        "startX": 26,
+        "startY": 26,
+        "startDirection": "up",
+        "startSceneId": "4d692e97-90ce-4d73-aa45-8dab9a82feec",
         "playerSpriteSheetId": "edd371ed-bfaa-40a7-9d15-14a2aefbea36"
     },
     "scenes": [
@@ -27,22 +27,788 @@
             "y": 31,
             "actors": [],
             "triggers": []
+        },
+        {
+            "name": "Starting Zone",
+            "backgroundId": "2d24b5ed-aa94-46a0-8152-8fd3cafe9ba7",
+            "width": 32,
+            "height": 32,
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                248,
+                1,
+                0,
+                255,
+                15,
+                1,
+                0,
+                8,
+                0,
+                1,
+                15,
+                15,
+                0,
+                1,
+                8,
+                1,
+                0,
+                1,
+                136,
+                1,
+                0,
+                5,
+                136,
+                1,
+                0,
+                207,
+                8,
+                1,
+                0,
+                0,
+                8,
+                1,
+                0,
+                0,
+                8,
+                1,
+                0,
+                0,
+                8,
+                1,
+                0,
+                0,
+                8,
+                1,
+                0,
+                0,
+                8,
+                1,
+                0,
+                0,
+                8,
+                1,
+                0,
+                0,
+                8,
+                1,
+                0,
+                0,
+                8,
+                1,
+                0,
+                0,
+                8,
+                1,
+                0,
+                0,
+                248,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                248,
+                1,
+                0,
+                0,
+                8,
+                1,
+                0,
+                0
+            ],
+            "id": "4d692e97-90ce-4d73-aa45-8dab9a82feec",
+            "x": 516,
+            "y": 312,
+            "actors": [
+                {
+                    "spriteSheetId": "84910a8b-9455-4d1c-8609-77b15606c81a",
+                    "movementType": "faceInteraction",
+                    "direction": "right",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "7cf7a612-e59a-4547-9e06-6c79f51fce5f",
+                    "x": 10,
+                    "y": 28,
+                    "name": "Start Zone Detective",
+                    "animate": true,
+                    "startScript": [
+                        {
+                            "id": "0da183b6-91f6-4010-b492-ba2189811575",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "1",
+                                "__collapseElse": false,
+                                "__disableElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "aba7b5e1-32a6-402f-950c-7a8f49933ff5",
+                                        "command": "EVENT_ACTOR_HIDE",
+                                        "args": {
+                                            "actorId": "7cf7a612-e59a-4547-9e06-6c79f51fce5f"
+                                        }
+                                    },
+                                    {
+                                        "id": "fa22d856-3200-47f3-9d2f-2ea27b1edb69",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "6f091932-bc81-43df-abab-0f7a7dac5bb0",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "f0c59cb3-9c6a-4c3b-ae72-72d359a12956",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ],
+            "triggers": [
+                {
+                    "trigger": "walk",
+                    "id": "cef2490a-ddfc-429e-ba84-25933096d8e3",
+                    "x": 28,
+                    "y": 16,
+                    "width": 2,
+                    "height": 1,
+                    "name": "Home - Outside",
+                    "script": [
+                        {
+                            "id": "80c05ec3-0d48-4ba1-975a-9889c3005ec6",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "b380f989-2ccd-4e19-827c-eb5825385c75",
+                                "x": 7,
+                                "y": 15,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "bc11e815-ed22-4c4a-8d09-4837c80f6e89",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "94550605-ca09-4367-b033-271a0fdb36d2",
+                    "x": 8,
+                    "y": 28,
+                    "width": 1,
+                    "height": 2,
+                    "script": [
+                        {
+                            "id": "652729f9-cb07-445a-8618-1a54246bacc6",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "I should really go\nget my partner..."
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "62f07259-a789-4a50-abad-8feaf4538717",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ],
+            "script": [
+                {
+                    "id": "4969fc60-68b3-45fa-a388-abc06bd46230",
+                    "command": "EVENT_IF_FALSE",
+                    "args": {
+                        "variable": "1",
+                        "__collapseElse": false,
+                        "__disableElse": true,
+                        "__comment": false,
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "id": "8ce2aea7-7d54-4aed-80f3-59c574c1d943",
+                                "command": "EVENT_ACTOR_MOVE_TO",
+                                "args": {
+                                    "actorId": "7cf7a612-e59a-4547-9e06-6c79f51fce5f",
+                                    "x": 24,
+                                    "y": 26,
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "fdce3136-ab16-413f-9aca-6160b1fa9efa",
+                                "command": "EVENT_ACTOR_SET_DIRECTION",
+                                "args": {
+                                    "actorId": "7cf7a612-e59a-4547-9e06-6c79f51fce5f",
+                                    "direction": "right",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "a2e6b605-c001-4a83-bfce-ce0d6f5b2c08",
+                                "command": "EVENT_ACTOR_SET_DIRECTION",
+                                "args": {
+                                    "actorId": "player",
+                                    "direction": "left",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "bc71b81e-7d5f-48c9-ab9e-c40d19c6180f",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Professor: Thank\ngoodness I found\nyou Detective!",
+                                        "Team Rocket has\nbroken into my lab",
+                                        "And stolen all my\nPokemon!",
+                                        "Please help me get\nthem back safely!"
+                                    ],
+                                    "avatarId": "",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "96de6317-6398-42ce-b742-2723d50bc810",
+                                "command": "EVENT_ACTOR_EMOTE",
+                                "args": {
+                                    "actorId": "player",
+                                    "emoteId": 0,
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "3bf3da6c-d067-48fa-8698-0b7d8da1ed3a",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Detective: That is\nterrible! Let me\nget my partner",
+                                        "and we will meet\nyou at your lab! ",
+                                        "He is inside our\nhouse right now"
+                                    ],
+                                    "avatarId": "",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "8fc43cc9-7cd0-4975-ba61-b2b7b897b9e5",
+                                "command": "EVENT_ACTOR_EMOTE",
+                                "args": {
+                                    "actorId": "7cf7a612-e59a-4547-9e06-6c79f51fce5f",
+                                    "emoteId": "2",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "e8a8180c-c497-4b18-b676-1b65635af24f",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Professor: Thank\nyou so much!",
+                                        "I will be waiting\nat my lab in town."
+                                    ],
+                                    "avatarId": "",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "26934c3b-5687-48d6-a5b9-b1ddc7d8682a",
+                                "command": "EVENT_ACTOR_MOVE_TO",
+                                "args": {
+                                    "actorId": "7cf7a612-e59a-4547-9e06-6c79f51fce5f",
+                                    "x": 9,
+                                    "y": 28,
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "2f2f2dd8-9719-4586-87a5-664969777cc0",
+                                "command": "EVENT_ACTOR_HIDE",
+                                "args": {
+                                    "actorId": "7cf7a612-e59a-4547-9e06-6c79f51fce5f",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "948475fa-8d4e-4174-9c5d-cfb91c19bb75",
+                                "command": "EVENT_SET_TRUE",
+                                "args": {
+                                    "variable": "1",
+                                    "__collapse": false
+                                }
+                            },
+                            {
+                                "id": "b1877d0c-02a7-4d63-adbc-8ea5ba7198ca",
+                                "command": "EVENT_END"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "id": "621ef52d-0d08-4c76-b157-13c08eae5da9",
+                                "command": "EVENT_END"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "8ceae967-68d6-49ad-89f8-bf725ccf4fea",
+                    "command": "EVENT_END"
+                }
+            ]
+        },
+        {
+            "name": "Home Downstairs",
+            "backgroundId": "85fccedc-cf07-4bf0-8c81-ef209a9d6aa3",
+            "width": 20,
+            "height": 18,
+            "collisions": [
+                255,
+                255,
+                39,
+                0,
+                64,
+                226,
+                255,
+                39,
+                50,
+                64,
+                62,
+                3,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                240,
+                64,
+                2,
+                9,
+                36,
+                144,
+                64,
+                2,
+                15,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                228,
+                255,
+                127
+            ],
+            "id": "b380f989-2ccd-4e19-827c-eb5825385c75",
+            "x": 812.3714896389756,
+            "y": 312.22861504504505,
+            "actors": [
+                {
+                    "spriteSheetId": "41be31ae-f293-4bb8-8944-451c3fb6b2df",
+                    "movementType": "randomWalk",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "be53f1e0-f35c-456c-a2a1-bd0a64a7b9f6",
+                    "x": 14,
+                    "y": 3,
+                    "startScript": [
+                        {
+                            "id": "89617e94-caf7-42b2-ad78-5d948bcb7108",
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "be53f1e0-f35c-456c-a2a1-bd0a64a7b9f6"
+                            }
+                        },
+                        {
+                            "id": "8e17e3e2-9e1a-498c-aa13-a73d7b3a59d5",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "name": "Pikachu",
+                    "animate": false
+                }
+            ],
+            "triggers": [
+                {
+                    "trigger": "walk",
+                    "id": "1963fa5e-1548-4d1f-aad1-c913e38b2b93",
+                    "x": 16,
+                    "y": 3,
+                    "width": 2,
+                    "height": 2,
+                    "name": "Home - Upstairs",
+                    "script": [
+                        {
+                            "id": "d9c5a295-3073-4721-96a0-e1e8c00a234e",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "2f6ba9b2-0372-45c8-a28a-a6b790ab6816",
+                                "x": 14,
+                                "y": 4,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "15b77f28-8100-40de-ab16-61e42c7c5860",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "37167079-704b-499e-acc4-450ae682dc21",
+                    "x": 6,
+                    "y": 16,
+                    "width": 4,
+                    "height": 1,
+                    "script": [
+                        {
+                            "id": "7c204c4a-b0ae-402b-a1f8-e8a2a5841235",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "4d692e97-90ce-4d73-aa45-8dab9a82feec",
+                                "x": 28,
+                                "y": 17,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "d60f0179-73b0-4663-8339-4d688ca87fe5",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "name": "Home Downstairs"
+                }
+            ],
+            "script": [
+                {
+                    "id": "9097b778-f4f1-456c-b84a-170251c88e6f",
+                    "command": "EVENT_IF_FALSE",
+                    "args": {
+                        "variable": "0",
+                        "__collapseElse": false,
+                        "__disableElse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "id": "a762bbf3-a7ce-48d3-b658-056b343068a9",
+                                "command": "EVENT_ACTOR_MOVE_TO",
+                                "args": {
+                                    "actorId": "player",
+                                    "x": 4,
+                                    "y": 15,
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "fa596783-5828-4c1f-a54f-1bd8a9643a55",
+                                "command": "EVENT_ACTOR_MOVE_TO",
+                                "args": {
+                                    "actorId": "player",
+                                    "x": 4,
+                                    "y": 7,
+                                    "__collapse": false
+                                }
+                            },
+                            {
+                                "id": "7877680a-ed12-4fde-850f-bd42c6ba7378",
+                                "command": "EVENT_ACTOR_SET_DIRECTION",
+                                "args": {
+                                    "actorId": "player",
+                                    "direction": "right"
+                                }
+                            },
+                            {
+                                "id": "e02198a6-8357-4d5b-94a4-66e036367a06",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Hey partner! The\nprofessor needs\nour help!"
+                                    ],
+                                    "avatarId": "",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "ae53dad0-6d55-4602-b6aa-db2c4c9dfe15",
+                                "command": "EVENT_ACTOR_SHOW",
+                                "args": {
+                                    "actorId": "be53f1e0-f35c-456c-a2a1-bd0a64a7b9f6",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "d3ccd7ff-5632-46a3-98e4-ae5940316340",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Pika Pika!"
+                                    ],
+                                    "avatarId": "",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "60b6bfa3-0711-445e-a353-43e6ad6ffbba",
+                                "command": "EVENT_ACTOR_MOVE_TO",
+                                "args": {
+                                    "actorId": "be53f1e0-f35c-456c-a2a1-bd0a64a7b9f6",
+                                    "x": 7,
+                                    "y": 7,
+                                    "__collapse": false
+                                }
+                            },
+                            {
+                                "id": "baa8612e-9d7a-4e78-8451-c95a89f4700b",
+                                "command": "EVENT_ACTOR_SET_DIRECTION",
+                                "args": {
+                                    "actorId": "be53f1e0-f35c-456c-a2a1-bd0a64a7b9f6",
+                                    "direction": "left",
+                                    "__collapse": false
+                                }
+                            },
+                            {
+                                "id": "fc4ccf48-eb67-4cf3-a865-eb9bfdefefcb",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Hop on my shoulder\nand lets get\nmoving!"
+                                    ],
+                                    "avatarId": "",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "d3bdaca7-4ce5-4bef-a68e-2967b13a9e6e",
+                                "command": "EVENT_ACTOR_HIDE",
+                                "args": {
+                                    "actorId": "be53f1e0-f35c-456c-a2a1-bd0a64a7b9f6",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "280de33b-143b-4f02-8e49-03340a6879fc",
+                                "command": "EVENT_SET_VALUE",
+                                "args": {
+                                    "variable": "0",
+                                    "value": 1,
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "74920669-6ce9-4b5e-8370-924127b36a82",
+                                "command": "EVENT_END"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "id": "cd7a4126-c70b-4ded-b1de-33d17190748f",
+                                "command": "EVENT_END"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "9b2f570d-9796-4e2c-a4ac-3cb88638e904",
+                    "command": "EVENT_END"
+                }
+            ]
+        },
+        {
+            "name": "Home Upstaris",
+            "backgroundId": "ddb5540e-5fe4-4223-b53d-c6d344112158",
+            "width": 20,
+            "height": 18,
+            "collisions": [
+                252,
+                255,
+                7,
+                0,
+                64,
+                128,
+                255,
+                7,
+                8,
+                64,
+                254,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                48,
+                64,
+                2,
+                3,
+                36,
+                48,
+                64,
+                2,
+                3,
+                228,
+                0,
+                76,
+                8,
+                192,
+                132,
+                0,
+                76,
+                8,
+                192,
+                132,
+                255,
+                127
+            ],
+            "id": "2f6ba9b2-0372-45c8-a28a-a6b790ab6816",
+            "x": 811.5143467070966,
+            "y": 490.5143448760416,
+            "actors": [],
+            "triggers": [
+                {
+                    "trigger": "walk",
+                    "id": "c7b0b083-cf59-416c-ad27-50305e9fa644",
+                    "x": 16,
+                    "y": 3,
+                    "width": 2,
+                    "height": 2,
+                    "name": "Home Upstairs",
+                    "script": [
+                        {
+                            "id": "df2d0b39-6b77-44ca-933f-744ffdd5eb11",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "b380f989-2ccd-4e19-827c-eb5825385c75",
+                                "x": 14,
+                                "y": 4,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "9921a8b8-4275-4ce0-8379-6c2818ce9b4c",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "_version": "1.2.0",
     "author": "Chewbaggins",
     "name": "DetectivePikachu",
-    "variables": [],
+    "variables": [
+        {
+            "id": "4d692e97-90ce-4d73-aa45-8dab9a82feec__L0",
+            "name": "Intro Scene Done"
+        },
+        {
+            "id": "b380f989-2ccd-4e19-827c-eb5825385c75__L0",
+            "name": "Pikachu Found"
+        },
+        {
+            "id": "0",
+            "name": "Pikachu Found"
+        },
+        {
+            "id": "1",
+            "name": "Intro Scene Done"
+        }
+    ],
     "backgrounds": [
         {
-            "id": "59422921-9aef-45c6-b0bd-2058f4223c64",
-            "name": "Pokecenter",
+            "id": "adb059bb-aca8-49ed-8c77-99b11c3746ce",
+            "name": "House",
+            "width": 16,
+            "height": 16,
+            "imageWidth": 128,
+            "imageHeight": 128,
+            "filename": "House.png",
+            "_v": 1591480151396
+        },
+        {
+            "id": "966b6b4d-595a-416c-a89b-aaf9be174f3a",
+            "name": "inside",
             "width": 20,
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "Pokecenter.png",
-            "_v": 1591478588949
+            "filename": "inside.png",
+            "_v": 1591480151396
         },
         {
             "id": "33a7b13f-e1d2-4cd4-9e52-be98f72d88e2",
@@ -52,7 +818,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "interior-1.png",
-            "_v": 1591478588898
+            "_v": 1591480151396
         },
         {
             "id": "85fccedc-cf07-4bf0-8c81-ef209a9d6aa3",
@@ -62,7 +828,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "interior-downstairs1.png",
-            "_v": 1591478588902
+            "_v": 1591480151396
         },
         {
             "id": "95b2f4a3-3bfb-4078-8eeb-de539d11bd76",
@@ -72,7 +838,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "interior-statue.png",
-            "_v": 1591478588944
+            "_v": 1591480151396
         },
         {
             "id": "ddb5540e-5fe4-4223-b53d-c6d344112158",
@@ -82,7 +848,27 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "interior-upstairs1.png",
-            "_v": 1591478588948
+            "_v": 1591480151396
+        },
+        {
+            "id": "2d24b5ed-aa94-46a0-8152-8fd3cafe9ba7",
+            "name": "playerstart",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "playerstart.png",
+            "_v": 1591480151396
+        },
+        {
+            "id": "59422921-9aef-45c6-b0bd-2058f4223c64",
+            "name": "Pokecenter",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Pokecenter.png",
+            "_v": 1591480151396
         },
         {
             "id": "9e21e972-1b49-4df8-a9c4-ff53ed495628",
@@ -92,7 +878,27 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "pokemart.png",
-            "_v": 1591478588800
+            "_v": 1591480151396
+        },
+        {
+            "id": "0f08cddf-0bd5-4dd5-bc58-9ea8ba1c7dc6",
+            "name": "town1",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "town1.png",
+            "_v": 1591480151396
+        },
+        {
+            "id": "7b07fef0-adc6-41f0-97e0-129e0f8482c4",
+            "name": "town2",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "town2.png",
+            "_v": 1591480151396
         }
     ],
     "spriteSheets": [
@@ -102,7 +908,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Ash.png",
-            "_v": 1591478639975
+            "_v": 1591480151396
         },
         {
             "id": "c1355dc8-0300-4673-9303-be9ee53ba7ce",
@@ -110,7 +916,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "book.png",
-            "_v": 1591478639983
+            "_v": 1591480151396
         },
         {
             "id": "22001ee6-0c4b-4e95-ae07-64c01aa50ec8",
@@ -118,7 +924,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "chef.png",
-            "_v": 1591478639986
+            "_v": 1591480151396
         },
         {
             "id": "519a4631-98da-4f8a-8b8b-61efd8c8ce85",
@@ -126,7 +932,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "clipboard.png",
-            "_v": 1591478640016
+            "_v": 1591480151396
         },
         {
             "id": "03f0163b-30d3-4a36-a9be-59b5299c2ab2",
@@ -134,7 +940,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "nurse-joy.png",
-            "_v": 1591478640021
+            "_v": 1591480151396
         },
         {
             "id": "8ab4a079-0042-4744-a10d-8eb3e1268c47",
@@ -142,7 +948,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "officer.png",
-            "_v": 1591478640026
+            "_v": 1591480151396
         },
         {
             "id": "5488e507-ae5a-40f0-b1ab-3eadd2d4d90d",
@@ -150,7 +956,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "paper.png",
-            "_v": 1591478640027
+            "_v": 1591480151396
         },
         {
             "id": "10043cdc-bb55-418c-94e4-2fe8d8153b62",
@@ -158,7 +964,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "pidgey.png",
-            "_v": 1591478640037
+            "_v": 1591480151396
         },
         {
             "id": "41be31ae-f293-4bb8-8944-451c3fb6b2df",
@@ -166,7 +972,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "pikachu.png",
-            "_v": 1591478640035
+            "_v": 1591480151397
         },
         {
             "id": "2284bf97-b0c5-412d-8ae8-947ffd0b8410",
@@ -174,7 +980,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "pokeball.png",
-            "_v": 1591478640043
+            "_v": 1591480151397
         },
         {
             "id": "84910a8b-9455-4d1c-8609-77b15606c81a",
@@ -182,7 +988,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "professor.png",
-            "_v": 1591478640040
+            "_v": 1591480151397
         },
         {
             "id": "4bfcddf0-8eaa-4ceb-ab95-f4db47aeb740",
@@ -190,7 +996,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "scientist.png",
-            "_v": 1591478640045
+            "_v": 1591480151397
         },
         {
             "id": "f65a49ab-4abc-4ea7-9ee7-f6953ac2f1bc",
@@ -198,7 +1004,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "sunglass-man.png",
-            "_v": 1591478640046
+            "_v": 1591480151397
         },
         {
             "id": "a54807b0-c0c9-453d-9350-abf2e00bdfb3",
@@ -206,7 +1012,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "thug.png",
-            "_v": 1591478640047
+            "_v": 1591480151397
         },
         {
             "id": "3c7586f2-692c-46d3-9a49-fc7b5c7ab93d",
@@ -214,7 +1020,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "tophat-man.png",
-            "_v": 1591478639974
+            "_v": 1591480151397
         }
     ],
     "music": [
@@ -222,7 +1028,7 @@
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1591478545866
+            "_v": 1591480151393
         }
     ],
     "customEvents": []
