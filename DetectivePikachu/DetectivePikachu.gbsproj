@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 957.5999755859375,
-        "worldScrollY": 964.7999877929688,
-        "zoom": 233.33331298828125,
+        "worldScrollX": 0,
+        "worldScrollY": 0,
+        "zoom": 100,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -16,77 +16,6 @@
         "playerSpriteSheetId": "edd371ed-bfaa-40a7-9d15-14a2aefbea36"
     },
     "scenes": [
-        {
-            "name": "Pokecenter",
-            "backgroundId": "16d2ed6c-3d4e-4388-b29e-51efd1623e9a",
-            "width": 16,
-            "height": 16,
-            "collisions": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "id": "5b2c06fa-d0f7-4a61-af47-0940b0397387",
-            "x": 428,
-            "y": 31,
-            "actors": [],
-            "triggers": [
-                {
-                    "trigger": "walk",
-                    "id": "5f96fe67-9a59-4496-987a-12ec9c6c8d2a",
-                    "x": 6,
-                    "y": 15,
-                    "width": 4,
-                    "height": 1,
-                    "script": [
-                        {
-                            "id": "9bb3b14c-d456-4f4b-80d4-d1c4c0ba313f",
-                            "command": "EVENT_SWITCH_SCENE",
-                            "args": {
-                                "sceneId": "4d692e97-90ce-4d73-aa45-8dab9a82feec",
-                                "x": 1,
-                                "y": 28,
-                                "direction": "",
-                                "fadeSpeed": "2"
-                            }
-                        },
-                        {
-                            "id": "89427b69-3334-4cc5-95f6-bb302739a298",
-                            "command": "EVENT_END"
-                        }
-                    ]
-                }
-            ]
-        },
         {
             "name": "Starting Zone",
             "backgroundId": "2d24b5ed-aa94-46a0-8152-8fd3cafe9ba7",
@@ -849,6 +778,192 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Scene 5",
+            "backgroundId": "16d2ed6c-3d4e-4388-b29e-51efd1623e9a",
+            "width": 16,
+            "height": 16,
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "id": "cfb1bd93-f8de-446e-b115-18ecbb4d3d28",
+            "x": 372.5,
+            "y": 136.5,
+            "actors": [],
+            "triggers": []
+        },
+        {
+            "name": "Scene 5",
+            "backgroundId": "d8dee587-2aa5-42bc-a4e2-3ca13c442c47",
+            "width": 32,
+            "height": 32,
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "id": "9662b365-f8a5-496e-b41e-bf1f93bc52bb",
+            "x": 213.5,
+            "y": 320.5,
+            "actors": [],
+            "triggers": []
         }
     ],
     "_version": "1.2.0",
@@ -881,27 +996,7 @@
             "imageWidth": 128,
             "imageHeight": 128,
             "filename": "House.png",
-            "_v": 1591480151396
-        },
-        {
-            "id": "16d2ed6c-3d4e-4388-b29e-51efd1623e9a",
-            "name": "Lab",
-            "width": 16,
-            "height": 16,
-            "imageWidth": 128,
-            "imageHeight": 128,
-            "filename": "Lab.png",
-            "_v": 1591484312765
-        },
-        {
-            "id": "59422921-9aef-45c6-b0bd-2058f4223c64",
-            "name": "Pokecenter",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "Pokecenter.png",
-            "_v": 1591484312765
+            "_v": 1591490970874
         },
         {
             "id": "966b6b4d-595a-416c-a89b-aaf9be174f3a",
@@ -911,7 +1006,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "inside.png",
-            "_v": 1591480151396
+            "_v": 1591490970875
         },
         {
             "id": "33a7b13f-e1d2-4cd4-9e52-be98f72d88e2",
@@ -921,7 +1016,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "interior-1.png",
-            "_v": 1591480151396
+            "_v": 1591490970875
         },
         {
             "id": "85fccedc-cf07-4bf0-8c81-ef209a9d6aa3",
@@ -931,7 +1026,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "interior-downstairs1.png",
-            "_v": 1591480151396
+            "_v": 1591490970875
         },
         {
             "id": "95b2f4a3-3bfb-4078-8eeb-de539d11bd76",
@@ -941,7 +1036,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "interior-statue.png",
-            "_v": 1591480151396
+            "_v": 1591490970875
         },
         {
             "id": "ddb5540e-5fe4-4223-b53d-c6d344112158",
@@ -951,7 +1046,27 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "interior-upstairs1.png",
-            "_v": 1591480151396
+            "_v": 1591490970875
+        },
+        {
+            "id": "16d2ed6c-3d4e-4388-b29e-51efd1623e9a",
+            "name": "Lab",
+            "width": 16,
+            "height": 16,
+            "imageWidth": 128,
+            "imageHeight": 128,
+            "filename": "Lab.png",
+            "_v": 1591490970875
+        },
+        {
+            "id": "d8dee587-2aa5-42bc-a4e2-3ca13c442c47",
+            "name": "labtown",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "labtown.png",
+            "_v": 1591490970875
         },
         {
             "id": "2d24b5ed-aa94-46a0-8152-8fd3cafe9ba7",
@@ -961,7 +1076,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "playerstart.png",
-            "_v": 1591480151396
+            "_v": 1591490970875
         },
         {
             "id": "59422921-9aef-45c6-b0bd-2058f4223c64",
@@ -971,7 +1086,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Pokecenter.png",
-            "_v": 1591480151396
+            "_v": 1591490970875
         },
         {
             "id": "9e21e972-1b49-4df8-a9c4-ff53ed495628",
@@ -981,7 +1096,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "pokemart.png",
-            "_v": 1591480151396
+            "_v": 1591490970875
         },
         {
             "id": "0f08cddf-0bd5-4dd5-bc58-9ea8ba1c7dc6",
@@ -991,7 +1106,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "town1.png",
-            "_v": 1591480151396
+            "_v": 1591490970875
         },
         {
             "id": "7b07fef0-adc6-41f0-97e0-129e0f8482c4",
@@ -1001,7 +1116,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "town2.png",
-            "_v": 1591480151396
+            "_v": 1591490970876
         }
     ],
     "spriteSheets": [
@@ -1011,7 +1126,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Ash.png",
-            "_v": 1591480151396
+            "_v": 1591490970875
         },
         {
             "id": "c1355dc8-0300-4673-9303-be9ee53ba7ce",
@@ -1019,7 +1134,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "book.png",
-            "_v": 1591480151396
+            "_v": 1591490970876
         },
         {
             "id": "22001ee6-0c4b-4e95-ae07-64c01aa50ec8",
@@ -1027,7 +1142,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "chef.png",
-            "_v": 1591480151396
+            "_v": 1591490970876
         },
         {
             "id": "519a4631-98da-4f8a-8b8b-61efd8c8ce85",
@@ -1035,7 +1150,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "clipboard.png",
-            "_v": 1591480151396
+            "_v": 1591490970876
         },
         {
             "id": "03f0163b-30d3-4a36-a9be-59b5299c2ab2",
@@ -1043,7 +1158,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "nurse-joy.png",
-            "_v": 1591480151396
+            "_v": 1591490970876
         },
         {
             "id": "8ab4a079-0042-4744-a10d-8eb3e1268c47",
@@ -1051,7 +1166,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "officer.png",
-            "_v": 1591480151396
+            "_v": 1591490970876
         },
         {
             "id": "5488e507-ae5a-40f0-b1ab-3eadd2d4d90d",
@@ -1059,7 +1174,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "paper.png",
-            "_v": 1591480151396
+            "_v": 1591490970876
         },
         {
             "id": "10043cdc-bb55-418c-94e4-2fe8d8153b62",
@@ -1067,7 +1182,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "pidgey.png",
-            "_v": 1591480151396
+            "_v": 1591490970876
         },
         {
             "id": "41be31ae-f293-4bb8-8944-451c3fb6b2df",
@@ -1075,7 +1190,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "pikachu.png",
-            "_v": 1591480151397
+            "_v": 1591490970876
         },
         {
             "id": "2284bf97-b0c5-412d-8ae8-947ffd0b8410",
@@ -1083,7 +1198,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "pokeball.png",
-            "_v": 1591480151397
+            "_v": 1591490970876
         },
         {
             "id": "84910a8b-9455-4d1c-8609-77b15606c81a",
@@ -1091,7 +1206,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "professor.png",
-            "_v": 1591480151397
+            "_v": 1591490970876
         },
         {
             "id": "4bfcddf0-8eaa-4ceb-ab95-f4db47aeb740",
@@ -1099,7 +1214,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "scientist.png",
-            "_v": 1591480151397
+            "_v": 1591490970876
         },
         {
             "id": "f65a49ab-4abc-4ea7-9ee7-f6953ac2f1bc",
@@ -1107,7 +1222,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "sunglass-man.png",
-            "_v": 1591480151397
+            "_v": 1591490970876
         },
         {
             "id": "a54807b0-c0c9-453d-9350-abf2e00bdfb3",
@@ -1115,7 +1230,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "thug.png",
-            "_v": 1591480151397
+            "_v": 1591490970876
         },
         {
             "id": "3c7586f2-692c-46d3-9a49-fc7b5c7ab93d",
@@ -1123,7 +1238,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "tophat-man.png",
-            "_v": 1591480151397
+            "_v": 1591490970876
         }
     ],
     "music": [
@@ -1131,7 +1246,7 @@
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1591480151393
+            "_v": 1591490970867
         }
     ],
     "customEvents": []
