@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 957.5999755859375,
-        "worldScrollY": 631.2000122070312,
-        "zoom": 233.33331298828125,
+        "worldScrollX": 0,
+        "worldScrollY": 0,
+        "zoom": 100,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -12,7 +12,7 @@
         "startX": 26,
         "startY": 26,
         "startDirection": "up",
-        "startSceneId": "4d692e97-90ce-4d73-aa45-8dab9a82feec",
+        "startSceneId": "9a3d2a3f-490e-4ae7-a933-9fa501565f81",
         "playerSpriteSheetId": "edd371ed-bfaa-40a7-9d15-14a2aefbea36"
     },
     "scenes": [
@@ -945,6 +945,137 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Title Scene",
+            "backgroundId": "658a12ca-49fa-4a68-8aa4-cf8b449efa64",
+            "width": 20,
+            "height": 18,
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "id": "9a3d2a3f-490e-4ae7-a933-9fa501565f81",
+            "x": 560,
+            "y": 115,
+            "actors": [],
+            "triggers": [],
+            "script": [
+                {
+                    "id": "50caf8fa-fd86-4a78-99b3-c21c20945e13",
+                    "command": "EVENT_MENU",
+                    "args": {
+                        "variable": "L0",
+                        "items": 2,
+                        "option1": "New",
+                        "option2": "Load ",
+                        "option3": "",
+                        "option4": "",
+                        "option5": "",
+                        "option6": "",
+                        "option7": "",
+                        "option8": "",
+                        "cancelOnB": false,
+                        "layout": "menu",
+                        "__collapse": true
+                    }
+                },
+                {
+                    "id": "426456a5-74a0-4bde-aac8-7f0a10ca5af8",
+                    "command": "EVENT_IF_VALUE",
+                    "args": {
+                        "variable": "L0",
+                        "operator": "==",
+                        "comparator": 1,
+                        "__collapseElse": false,
+                        "__comment": false,
+                        "__disableElse": false,
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "id": "6e3dbd5e-1d30-4b2e-b210-cc9601a77680",
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "4d692e97-90ce-4d73-aa45-8dab9a82feec",
+                                    "x": 26,
+                                    "y": 26,
+                                    "direction": "",
+                                    "fadeSpeed": "2"
+                                }
+                            },
+                            {
+                                "id": "574129e3-27a5-4bea-bd1b-e0a1a910bfab",
+                                "command": "EVENT_END"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "id": "5a3549f4-6f41-44b2-a820-6f9ede5718b3",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "We can't load\nsaved games yet"
+                                    ],
+                                    "avatarId": ""
+                                }
+                            },
+                            {
+                                "id": "2f6e8a8e-5cb7-4e49-aeb4-35ad7d84972f",
+                                "command": "EVENT_END"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "a344491c-c670-4fad-b854-9f822337e7b5",
+                    "command": "EVENT_END"
+                }
+            ]
         }
     ],
     "_version": "1.2.0",
@@ -970,6 +1101,10 @@
         {
             "id": "2",
             "name": "Lab Scene Done"
+        },
+        {
+            "id": "9a3d2a3f-490e-4ae7-a933-9fa501565f81__L0",
+            "name": "Menu Selection"
         }
     ],
     "backgrounds": [
@@ -981,57 +1116,7 @@
             "imageWidth": 128,
             "imageHeight": 128,
             "filename": "House.png",
-            "_v": 1591491188627
-        },
-        {
-            "id": "966b6b4d-595a-416c-a89b-aaf9be174f3a",
-            "name": "inside",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "inside.png",
-            "_v": 1591491188627
-        },
-        {
-            "id": "33a7b13f-e1d2-4cd4-9e52-be98f72d88e2",
-            "name": "interior-1",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "interior-1.png",
-            "_v": 1591491188627
-        },
-        {
-            "id": "85fccedc-cf07-4bf0-8c81-ef209a9d6aa3",
-            "name": "interior-downstairs1",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "interior-downstairs1.png",
-            "_v": 1591491188627
-        },
-        {
-            "id": "95b2f4a3-3bfb-4078-8eeb-de539d11bd76",
-            "name": "interior-statue",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "interior-statue.png",
-            "_v": 1591491188627
-        },
-        {
-            "id": "ddb5540e-5fe4-4223-b53d-c6d344112158",
-            "name": "interior-upstairs1",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "interior-upstairs1.png",
-            "_v": 1591491188627
+            "_v": 1591498274823
         },
         {
             "id": "16d2ed6c-3d4e-4388-b29e-51efd1623e9a",
@@ -1041,27 +1126,7 @@
             "imageWidth": 128,
             "imageHeight": 128,
             "filename": "Lab.png",
-            "_v": 1591491188627
-        },
-        {
-            "id": "d8dee587-2aa5-42bc-a4e2-3ca13c442c47",
-            "name": "labtown",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "labtown.png",
-            "_v": 1591491188627
-        },
-        {
-            "id": "2d24b5ed-aa94-46a0-8152-8fd3cafe9ba7",
-            "name": "playerstart",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "playerstart.png",
-            "_v": 1591491188627
+            "_v": 1591498274823
         },
         {
             "id": "59422921-9aef-45c6-b0bd-2058f4223c64",
@@ -1071,7 +1136,87 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Pokecenter.png",
-            "_v": 1591491188627
+            "_v": 1591498274823
+        },
+        {
+            "id": "1b01284a-0373-4d61-a42e-de29bc0fd407",
+            "name": "battle",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "battle.png",
+            "_v": 1591498274823
+        },
+        {
+            "id": "966b6b4d-595a-416c-a89b-aaf9be174f3a",
+            "name": "inside",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "inside.png",
+            "_v": 1591498274823
+        },
+        {
+            "id": "33a7b13f-e1d2-4cd4-9e52-be98f72d88e2",
+            "name": "interior-1",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "interior-1.png",
+            "_v": 1591498274823
+        },
+        {
+            "id": "85fccedc-cf07-4bf0-8c81-ef209a9d6aa3",
+            "name": "interior-downstairs1",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "interior-downstairs1.png",
+            "_v": 1591498274823
+        },
+        {
+            "id": "95b2f4a3-3bfb-4078-8eeb-de539d11bd76",
+            "name": "interior-statue",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "interior-statue.png",
+            "_v": 1591498274823
+        },
+        {
+            "id": "ddb5540e-5fe4-4223-b53d-c6d344112158",
+            "name": "interior-upstairs1",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "interior-upstairs1.png",
+            "_v": 1591498274823
+        },
+        {
+            "id": "d8dee587-2aa5-42bc-a4e2-3ca13c442c47",
+            "name": "labtown",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "labtown.png",
+            "_v": 1591498274823
+        },
+        {
+            "id": "2d24b5ed-aa94-46a0-8152-8fd3cafe9ba7",
+            "name": "playerstart",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "playerstart.png",
+            "_v": 1591498274823
         },
         {
             "id": "9e21e972-1b49-4df8-a9c4-ff53ed495628",
@@ -1081,7 +1226,17 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "pokemart.png",
-            "_v": 1591491188627
+            "_v": 1591498274823
+        },
+        {
+            "id": "658a12ca-49fa-4a68-8aa4-cf8b449efa64",
+            "name": "title-screen",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "title-screen.png",
+            "_v": 1591499015200
         },
         {
             "id": "0f08cddf-0bd5-4dd5-bc58-9ea8ba1c7dc6",
@@ -1091,7 +1246,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "town1.png",
-            "_v": 1591491188627
+            "_v": 1591498274823
         },
         {
             "id": "7b07fef0-adc6-41f0-97e0-129e0f8482c4",
@@ -1101,7 +1256,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "town2.png",
-            "_v": 1591491188627
+            "_v": 1591498274823
         }
     ],
     "spriteSheets": [
@@ -1111,7 +1266,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Ash.png",
-            "_v": 1591491188627
+            "_v": 1591498274823
         },
         {
             "id": "c1355dc8-0300-4673-9303-be9ee53ba7ce",
@@ -1119,7 +1274,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "book.png",
-            "_v": 1591491188627
+            "_v": 1591498274823
         },
         {
             "id": "22001ee6-0c4b-4e95-ae07-64c01aa50ec8",
@@ -1127,7 +1282,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "chef.png",
-            "_v": 1591491188627
+            "_v": 1591498274823
         },
         {
             "id": "519a4631-98da-4f8a-8b8b-61efd8c8ce85",
@@ -1135,7 +1290,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "clipboard.png",
-            "_v": 1591491188627
+            "_v": 1591498274823
         },
         {
             "id": "03f0163b-30d3-4a36-a9be-59b5299c2ab2",
@@ -1143,7 +1298,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "nurse-joy.png",
-            "_v": 1591491188627
+            "_v": 1591498274823
         },
         {
             "id": "8ab4a079-0042-4744-a10d-8eb3e1268c47",
@@ -1151,7 +1306,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "officer.png",
-            "_v": 1591491188627
+            "_v": 1591498274823
         },
         {
             "id": "5488e507-ae5a-40f0-b1ab-3eadd2d4d90d",
@@ -1159,7 +1314,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "paper.png",
-            "_v": 1591491188627
+            "_v": 1591498274823
         },
         {
             "id": "10043cdc-bb55-418c-94e4-2fe8d8153b62",
@@ -1167,7 +1322,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "pidgey.png",
-            "_v": 1591491188627
+            "_v": 1591498274823
         },
         {
             "id": "41be31ae-f293-4bb8-8944-451c3fb6b2df",
@@ -1175,7 +1330,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "pikachu.png",
-            "_v": 1591491188627
+            "_v": 1591498274823
         },
         {
             "id": "2284bf97-b0c5-412d-8ae8-947ffd0b8410",
@@ -1183,7 +1338,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "pokeball.png",
-            "_v": 1591491188627
+            "_v": 1591498274823
         },
         {
             "id": "84910a8b-9455-4d1c-8609-77b15606c81a",
@@ -1191,7 +1346,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "professor.png",
-            "_v": 1591491188627
+            "_v": 1591498274823
         },
         {
             "id": "4bfcddf0-8eaa-4ceb-ab95-f4db47aeb740",
@@ -1199,7 +1354,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "scientist.png",
-            "_v": 1591491188627
+            "_v": 1591498274823
         },
         {
             "id": "f65a49ab-4abc-4ea7-9ee7-f6953ac2f1bc",
@@ -1207,7 +1362,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "sunglass-man.png",
-            "_v": 1591491188627
+            "_v": 1591498274823
         },
         {
             "id": "a54807b0-c0c9-453d-9350-abf2e00bdfb3",
@@ -1215,7 +1370,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "thug.png",
-            "_v": 1591491188627
+            "_v": 1591498274823
         },
         {
             "id": "3c7586f2-692c-46d3-9a49-fc7b5c7ab93d",
@@ -1223,7 +1378,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "tophat-man.png",
-            "_v": 1591491188627
+            "_v": 1591498274823
         }
     ],
     "music": [
@@ -1231,7 +1386,7 @@
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1591491188624
+            "_v": 1591498274823
         }
     ],
     "customEvents": []
